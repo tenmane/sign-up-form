@@ -5,3 +5,20 @@
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background-container {
+  background: url(leaves.jpg);
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset a {
+  color: #596D48;
+}
