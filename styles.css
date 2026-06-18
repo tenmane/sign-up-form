@@ -10,17 +10,19 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   height: 100vh;
+  line-height: 1.2;
 }
 
 .main-container {
   display: flex;
-  height: 100%;
+  height: 100vh;
+  gap: 2rem;
 }
 
 .background-container {
   background: url(leaves.jpg);
   background-size: cover;
-  width: 55%;
+  width: 26%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -38,17 +40,16 @@ body {
   justify-content: center;
   height: 15%;
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   background-color: rgb(0 0 0 / 0.4);
 }
 
 .odin-logo {
-  width: 50px;
+  width: 5rem;
 }
 
 .image-description {
-  width: auto;
   color: white;
   font-size: 0.6rem;
 }
@@ -57,14 +58,83 @@ body {
   color: white;
 }
 
-.form-container {}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
 
-.intro {}
+.intro {
+  font-size: 1.3rem;
+  font-weight: 600;
+  max-inline-size: 60ch;
+  margin-bottom: 2rem;
+}
 
-.inputs-container {}
+.inputs-container {
+  border: none;
+  color: #212A39;
+  box-shadow: 0 4px 8px -2px rgb(0 0 0 / 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 60px;
+}
 
-.starting-line {}
+.starting-line {
+  font-size: 1.5rem;
+}
 
-.form-row {}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 30%;
+  margin-right: 50px;
+}
 
-.account-creation {}
+.form-row label {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form-row input {
+  border: 1px solid #E5E7EB;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.form-row input:user-valid {
+  border-color: green;
+}
+
+.form-row input:user-invalid {
+  border-color: red;
+}
+
+.form-row input:focus {
+  outline: none;
+  border: 1px solid rgb(81, 81, 235);
+  box-shadow: 0 2px 8px -2px rgb(0 0 0 / 0.3);
+}
+
+.account-creation {
+  margin-top: 50px;
+}
+
+.account-creation button {
+  padding: 13px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px -2px rgb(0 0 0 / 0.3);
+  margin-bottom: 13px;
+}
+
+.account-creation a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
